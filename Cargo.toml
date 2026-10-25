@@ -1,29 +1,24 @@
+# ============================================================
+# FORGE — AI Developer Agent
+# Frontend: Leptos 0.8 CSR + WebAssembly
+# Desktop framework: Tauri 2
+# ============================================================
 [package]
 name = "forge-ui"
 version = "0.1.0"
 edition = "2024"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# ============================================================
+# FRONTEND DEPENDENCIES
+# ============================================================
 [dependencies]
 leptos = { version = "0.8", features = ["csr"] }
-wasm-bindgen = "0.2"
-wasm-bindgen-futures = "0.4"
-js-sys = "0.3"
-serde = { version = "1", features = ["derive"] }
-serde-wasm-bindgen = "0.6"
 console_error_panic_hook = "0.1.7"
-tokio = { version = "1.53.3", features = ["full"] }
-serde_json = "1.0.154"
-thiserror = "2.0.21"
-anyhow = "1.0.104"
-sqlx = { version = "0.9.0", features = ["runtime-tokio", "sqlite", "migrate", "macros"] }
-reqwest = { version = "0.13.5", features = ["json", "stream"] }
-futures-util = "0.3.34"
-tokio-util = "0.7.20"
-ignore = "0.4.33"
-grep-searcher = "0.1.17"
-grep-regex = "0.1.14"
-uuid = { version = "1.28.0", features = ["v4", "serde"] }
+serde = "1.0.229"
+wasm-bindgen = "0.2.129"
+wasm-bindgen-futures = "0.4"
+serde-wasm-bindgen = "0.6"
 
 [workspace]
 members = ["src-tauri"]
+resolver = "3"

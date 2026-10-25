@@ -1,2 +1,9 @@
+pub mod agent_runs;
+pub mod approvals;
+pub mod connection;
+pub mod messages;
 pub mod models;
+pub mod projects;
 pub mod queries;
+pub mod sessions;
+pub mod tool_calls;
