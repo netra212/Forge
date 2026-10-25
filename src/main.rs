@@ -1,13 +1,14 @@
 mod app;
-
+mod components;
 use app::*;
 use leptos::prelude::*;
 
+// 1. Mount the Leptos Application.
 fn main() {
     console_error_panic_hook::set_once();
     mount_to_body(|| {
         view! {
-            <App/>
+            <App />
         }
     })
 }
