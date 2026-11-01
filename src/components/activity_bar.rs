@@ -19,7 +19,7 @@ impl ActivePanel {
             Self::Settings => "SETTINGS",
         }
     }
-    
+
     pub fn description(self) -> &'static str {
         match self {
             Self::Explorer => "No Project Opened",
@@ -32,9 +32,7 @@ impl ActivePanel {
 }
 
 #[component]
-pub fn ActivityBar(
-    active_panel: RwSignal<ActivePanel>,
-) -> impl IntoView {
+pub fn ActivityBar(active_panel: RwSignal<ActivePanel>) -> impl IntoView {
     // Describe the Activity Bar's UI.
     view! {
         // Semantic navigation element for accessibility.
